@@ -8,9 +8,9 @@
 
     <!-- HEADER -->
 
-        <header class="main-header">
-          <nav class="main-navigation">
-            <a class="main-header-logo">
+<header class="main-header">
+    <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
               <img src="img/index-logo.svg" alt="Логотип Глэйси Шоп">
             </a>
             <ul class="site-navigation">
@@ -31,17 +31,17 @@
               <li class="shopping-list"> 2 товара </li>
             </ul>
           </nav>
-          <ul class="cite-navigation">
-            <li><a href="index.html"> Главная <a> </li>
-            <li><a href="catalog.html"> Каталог</a></li>
-            <li class="cream-current"> Сливочное</li>
-          </ul>
           <p class="header-contacts">
             С 10 до 20, ежедневно <br>
             8 812 450-25-25
           </p>
         </header>
         <main class="cream-catalog">
+          <ul class="cite-navigation">
+            <li><a href="index.html"> Главная <a> </li>
+            <li><a href="catalog.html"> Каталог</a></li>
+            <li class="cream-current"> Сливочное</li>
+          </ul>
           <h1> Сливочное мороженое</h1>
           <section class="cream-filters">
 
@@ -134,28 +134,34 @@
     <a href="#"> Сливочное крем-брюле с карамельной подливкой </a>
     <a class="button" href="#"> Быстрый просмотр</a>
   </section>
-
 </section>
+<ul class="pagination-list">
+  <li class="pagination-item pagination-item-current"><a>1</a></li>
+  <li class="pagination-item"><a href="#">2</a></li>
+  <li class="pagination-item"><a href="#">3</a></li>
+  <li class="pagination-item"><a href="#">4</a></li>
+  <li class="pagination-item"><a href="#">5</a></li>
+  <li class="pagination-item"><a href="#">></a></li>
+</ul>
 </main>
 <!--FOOTER-->
 
 <footer class="main-footer">
-  <div class="footer-social">
-    <ul>
+    <ul class="sotial-navigation">
       <li><a class="social-button" href="#"> Твиттер </a></li>
       <li><a class="social-button" href="#"> Инстаграм </a></li>
       <li><a class="social-button" href="#"> Фейсбук </a></li>
       <li><a class="social-button" href="#"> Вконтакте </a></li>
     </ul>
-  </div>
-  <div class="footer-navigation">
+  <nav class="footer-navigation">
     <ul>
       <li><a href="#"> Для поставщиков </a></li>
       <li><a href="#"> О производстве </a></li>
       <li><a href="#"> Наши документы </a></li>
       <li><a href="#"> Экологические стандарты </a></li>
     </ul>
-  </div>
+  </nav>
+  <img src="htmlacademy-logo.svg" alt="Логотип HTML Academy">
   <p class="footer-copyright">
     Сделано в <a href="https://htmlacademy.ru/"> HTML Academy</a> &copy; 2019
   </p>
