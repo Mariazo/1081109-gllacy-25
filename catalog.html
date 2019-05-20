@@ -28,10 +28,75 @@
         <li><a href="about-company.html"> О компании </a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="user-search"> Что ищем? </li>
-        <li class="login-link"> Вход </li>
-        <li class="shopping-list"> 2 товара </li>
-      </ul>
+        <li class="user-search">
+          <a class="search-button" href="#">
+            <span class="visually-hidden"> Найти </span>
+          </a>
+          <ul class="search-field">
+            <li>
+              <h2 class="visually-hidden">Поиск</h2>
+              <form name="search" method="post" action="#">
+                <input type="search" name="serch-text" placeholder="Что ищем?">
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li class="login-link">
+          <a class="login-button" href="#"> Вход</a>
+          <ul class="login-form">
+            <li>
+              <h2 class="visible-hidden">Личный кабинет</h2>
+              <form name="login" method="post" action="#">
+                <p class="login-item">
+                  <label for="login-email" class="visible-hidden">Электронная почта</label>
+                  <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" required>
+                </p>
+                <p class="login-item">
+                  <label for="login-password" class="visible-hidden">Пароль</label>
+                  <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
+                </p>
+                <div class="links-wrapper">
+                  <p class="links">
+                    <a href="#" class="login-form-forget">Забыли пароль?</a>
+                    <a href="#" class="login-form-sin-up">Новая регистрация</a>
+                  </p>
+                  <button class="button login" type="submit">Войти</button>
+                </div>
+              </form>
+            </li>
+            <li class="shopping-list">
+              <a class="cart-button" href="#">2 товара</a>
+              <ul class="cart-content">
+                <li>
+                  <h2 class="visible-hidden">Корзина</h2>
+                  <ul class="сart-table">
+                    <li class="cart-item">
+                      <button class="delete-cart-item" type="button">Удалить</button>
+                      <a href="catalog-item.html">
+                        <img class="cart-item-img" src="img/orange-min.png" width="32" height="32" alt="Пломбир с апельсиновым джемом">
+                        <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
+                      </a>
+                      <span class="cart-item-cost">1,5 кг x <b>200 руб</b></span>
+                      <span class="cart-item-price">300 руб</span>
+                    </li>
+                    <li class="cart-item last-cart-item">
+                      <button class="delete-cart-item" type="button">Удалить</button>
+                      <a href="catalog-item">
+                        <img class="cart-item-img" src="img/strawberry-min.png" width="32" height="32" alt="Клубничный пломбир с присыпкой  из белого шоколада">
+                        <span class="cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
+                      </a>
+                      <span class="cart-item-cost">1,5 кг x <b>300 руб</b></span>
+                      <span class="cart-item-price">450 руб</span>
+                    </li>
+                    <li class="cart-item cart-cost">
+                      <span>Итого: 750 руб</span>
+                    </li>
+                  </ul>
+                  <a class="button cart-order-button" href="#">Оформить заказ</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
     </nav>
     <p class="header-contacts">
       С 10 до 20, ежедневно <br>
@@ -76,7 +141,7 @@
         <a class="button" href="#"> Быстрый просмотр</a>
       </section>
 
-      <section class="cream-caramele">
+      <section class="cream-caramel">
         <img src="img/cream-min.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
         <p class="cost"> 415₽/кг</p>
         <a href="#"> Сливочное крем-брюле с карамельной подливкой </a>
@@ -144,10 +209,10 @@
 
   <footer class="main-footer">
     <ul class="social-navigation">
-      <li><a class="social-button" href="#"> <img src="img/twitter.svg" width="34" height="34"></a></li>
-      <li><a class="social-button" href="#"> <img src="img/instagram.svg" width="34" height="34"></a></li>
-      <li><a class="social-button" href="#"> <img src="img/fb.svg" width="34" height="34"> </a></li>
-      <li><a class="social-button" href="#"> <img src="img/vk.svg" width="34" height="34"> </a></li>
+      <li><a class="social-button" href="#"> <img src="img/twitter.svg" width="34" height="34" alt="Ссылка на твиттер"></a></li>
+      <li><a class="social-button" href="#"> <img src="img/instagram.svg" width="34" height="34" alt="Ссылка на инстаграм""></a></li>
+      <li><a class=" social-button" href="#"> <img src="img/fb.svg" width="34" height="34" alt="Ссылка на фейсбук"> </a></li>
+      <li><a class="social-button" href="#"> <img src="img/vk.svg" width="34" height="34" alt="Ссылка на ВКонтакте"> </a></li>
     </ul>
     <nav class="footer-navigation">
       <ul>
