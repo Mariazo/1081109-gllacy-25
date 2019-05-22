@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,40 +34,32 @@
           <a class="search-button" href="#">
             <span class="visually-hidden"> Найти </span>
           </a>
-          <ul class="search-field">
-            <li>
-              <h2 class="visually-hidden">Поиск</h2>
-              <form name="search" method="post" action="#">
-                <input type="search" name="serch-text" placeholder="Что ищем?">
-              </form>
-            </li>
-          </ul>
+          <h2 class="visually-hidden">Поиск</h2>
+          <form name="search" method="post" action="#">
+            <input type="search" name="serch-text" placeholder="Что ищем?">
+          </form>
         </li>
 
         <li class="login-link">
           <a class="login-button" href="#"> Вход</a>
-          <ul class="login-form">
-            <li>
-              <h2 class="visible-hidden">Личный кабинет</h2>
-              <form name="login" method="post" action="#">
-                <p class="login-item">
-                  <label for="login-email" class="visible-hidden">Электронная почта</label>
-                  <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" required>
-                </p>
-                <p class="login-item">
-                  <label for="login-password" class="visible-hidden">Пароль</label>
-                  <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
-                </p>
-                <div class="links-wrapper">
-                  <p class="links">
-                    <a href="#" class="login-form-forget">Забыли пароль?</a>
-                    <a href="#" class="login-form-sin-up">Новая регистрация</a>
-                  </p>
-                  <button class="button login" type="submit">Войти</button>
-                </div>
-              </form>
-            </li>
-          </ul>
+          <h2 class="visible-hidden">Личный кабинет</h2>
+          <form name="login" method="post" action="#">
+            <p class="login-item">
+              <label for="login-email" class="visible-hidden">Электронная почта</label>
+              <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" required>
+            </p>
+            <p class="login-item">
+              <label for="login-password" class="visible-hidden">Пароль</label>
+              <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
+            </p>
+            <div class="links-wrapper">
+              <p class="links">
+                <a href="#" class="login-form-forget">Забыли пароль?</a>
+                <a href="#" class="login-form-sin-up">Новая регистрация</a>
+              </p>
+              <button class="button login" type="submit">Войти</button>
+            </div>
+          </form>
         </li>
 
         <li class="shopping-list">
@@ -96,6 +90,25 @@
         <a class="button" href="#"> Давайте оба!</a>
       </section>
     </section>
+
+    <ul class="slider-switches">
+      <li class="slide-radio">
+        <button class="slide-btn">
+          Первый слайд
+        </button>
+      </li>
+      <li class="slide-radio">
+        <button class="slide-btn">
+          Второй слайд
+        </button>
+      </li>
+      <li class="slide-radio">
+        <button class="slide-btn">
+          Третий слайд
+        </button>
+      </li>
+    </ul>
+
 
 
     <!-- GIFTS-->
@@ -214,7 +227,7 @@
     <ul class="social-navigation">
       <li><a class="social-button" href="#"> <img src="img/twitter.svg" width="34" height="34" alt="Ссылка на твиттер"></a></li>
       <li><a class="social-button" href="#"> <img src="img/instagram.svg" width="34" height="34" alt="Ссылка на инстаграм""></a></li>
-      <li><a class="social-button" href="#"> <img src="img/fb.svg" width="34" height="34" alt="Ссылка на фейсбук"> </a></li>
+      <li><a class=" social-button" href="#"> <img src="img/fb.svg" width="34" height="34" alt="Ссылка на фейсбук"> </a></li>
       <li><a class="social-button" href="#"> <img src="img/vk.svg" width="34" height="34" alt="Ссылка на ВКонтакте"> </a></li>
     </ul>
     <nav class="footer-navigation">
