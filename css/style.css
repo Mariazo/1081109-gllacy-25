@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #849d8f;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation,
+.catalog-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover, {
+  background-color: #f8f7f4;
+  color: #333333;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus, {
+  background-color: #ededed;
+  color: #323232;
+}
+
+.catalog-navigation:hover {
+  background-color: #fbded7;
+}
+
+.catalog-navigation:focus {
+  background-color: #f6b5a5;
+}
+
+.header-contacts {
+  text-align: left;
+}
+
+.jam-gift {
+  background-image: url(img/bg-rasb-min.png);
+}
+
+.choco-gift {
+  background-image: url(img/bg-choco-min.png);
+}
+
+.gifts h2 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.gifts p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #e74a35;
+}
