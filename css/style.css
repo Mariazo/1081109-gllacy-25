@@ -9,8 +9,10 @@ body {
   color: #ffffff;
 }
 
-a {
+a,
+.header-contacts {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .main-navigation {
@@ -20,14 +22,16 @@ a {
   color: #ffffff;
 }
 
-.site-navigation,
-.user-navigation,
-.catalog-navigation {
-  list-style: none;
-}
-
-.site-navigation a,
-.user-navigation a {
+.site-navigation {
+  height: 13px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
   color: #ffffff;
 }
 
@@ -55,28 +59,230 @@ a {
   text-align: left;
 }
 
+.gllacy-slider-items h2 {
+  height: 119px;
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.gllacy-slider-items button {
+  width: 196px;
+  height: 31px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
 .jam-gift {
   background-image: url(img/bg-rasb-min.png);
+  width: 560px;
+  height: 229px;
+  object-fit: contain;
+  border-radius: 15px;
 }
 
 .choco-gift {
   background-image: url(img/bg-choco-min.png);
+  width: 560px;
+  height: 229px;
+  object-fit: contain;
+  border-radius: 15px;
 }
 
 .gifts h2 {
+  height: 32px;
+  font-family: Roboto;
   font-size: 35px;
-  line-height: 41px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
 }
 
 .gifts p {
+  height: 40px;
+  font-family: Roboto;
   font-size: 18px;
-  line-height: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
 }
 
-.button {
-  font: inherit;
+.mini-catalog a,
+.cream-catalog-item a {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
   text-align: center;
   color: #ffffff;
+  text-decoration: underline;
+}
+
+.mini-catalog .button,
+.cream-catalog-item .button {
+  font: inherit;
+  text-align: center;
   vertical-align: middle;
   background-color: #e74a35;
+  text-decoration: none;
+  width: 166px;
+  height: 18px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #fefefe;
+}
+
+.advantages h2 {
+  height: 54px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+}
+
+.advantages p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+}
+
+li {
+  list-style: none;
+}
+
+.news {
+  background-image: url("img/bg-news.png");
+  width: 560px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.news h3 {
+  width: 161px;
+  height: 14px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+}
+
+.news p {
+  width: 279px;
+  height: 84px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.mailing p {
+  width: 506px;
+  height: 61px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5a5a5a;
+}
+
+.mailing .visiable-hidden {
+  width: 145px;
+  height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+}
+
+.mailing .button {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fefefe;
+  width: 129px;
+  height: 44px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+}
+
+.footer-navigation {
+  width: 111px;
+  height: 13px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: underline;
 }
