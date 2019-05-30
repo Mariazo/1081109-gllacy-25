@@ -24,7 +24,6 @@ a,
 
 .site-navigation {
   height: 13px;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -36,13 +35,13 @@ a,
 }
 
 .site-navigation a:hover,
-.user-navigation a:hover, {
+.user-navigation a:hover {
   background-color: #f8f7f4;
   color: #333333;
 }
 
 .site-navigation a:focus,
-.user-navigation a:focus, {
+.user-navigation a:focus {
   background-color: #ededed;
   color: #323232;
 }
@@ -61,7 +60,6 @@ a,
 
 .gllacy-slider-items h2 {
   height: 119px;
-  font-family: Roboto;
   font-size: 60px;
   font-weight: bold;
   font-style: normal;
@@ -76,7 +74,6 @@ a,
   width: 196px;
   height: 31px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  font-family: Roboto;
   font-size: 32px;
   font-weight: bold;
   font-style: normal;
@@ -88,7 +85,7 @@ a,
 }
 
 .jam-gift {
-  background-image: url(img/bg-rasb-min.png);
+  background-image: url("img/bg-rasb-min.png");
   width: 560px;
   height: 229px;
   object-fit: contain;
@@ -96,7 +93,7 @@ a,
 }
 
 .choco-gift {
-  background-image: url(img/bg-choco-min.png);
+  background-image: url("img/bg-choco-min.png");
   width: 560px;
   height: 229px;
   object-fit: contain;
@@ -105,7 +102,6 @@ a,
 
 .gifts h2 {
   height: 32px;
-  font-family: Roboto;
   font-size: 35px;
   font-weight: bold;
   font-style: normal;
@@ -118,7 +114,6 @@ a,
 
 .gifts p {
   height: 40px;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -131,7 +126,6 @@ a,
 
 .mini-catalog a,
 .cream-catalog-item a {
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -152,7 +146,6 @@ a,
   text-decoration: none;
   width: 166px;
   height: 18px;
-  font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -164,7 +157,6 @@ a,
 
 .advantages h2 {
   height: 54px;
-  font-family: Roboto;
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
@@ -176,7 +168,6 @@ a,
 }
 
 .advantages p {
-  font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -202,7 +193,6 @@ li {
 .news h3 {
   width: 161px;
   height: 14px;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -216,7 +206,6 @@ li {
 .news p {
   width: 279px;
   height: 84px;
-  font-family: Roboto;
   font-size: 24px;
   font-weight: bold;
   font-style: normal;
@@ -231,7 +220,6 @@ li {
 .mailing p {
   width: 506px;
   height: 61px;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -245,7 +233,6 @@ li {
 .mailing .visiable-hidden {
   width: 145px;
   height: 16px;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -257,7 +244,6 @@ li {
 }
 
 .mailing .button {
-  font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -273,9 +259,6 @@ li {
 }
 
 .footer-navigation {
-  width: 111px;
-  height: 13px;
-  font-family: Roboto;
   font-size: 13px;
   font-weight: bold;
   font-style: normal;
