@@ -20,6 +20,9 @@ a,
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .site-navigation {
@@ -32,6 +35,29 @@ a,
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+  text-decoration: underline;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.header-contacts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-header-logo {
+  order: -1;
+  transform: translateX(27px) translateY(9px);
 }
 
 .site-navigation a:hover,
@@ -44,6 +70,11 @@ a,
 .user-navigation a:focus {
   background-color: #ededed;
   color: #323232;
+}
+
+.catalog-navigation,
+.visible-hidden {
+  display: none;
 }
 
 .catalog-navigation:hover {
@@ -84,6 +115,13 @@ a,
   color: #ffffff;
 }
 
+.gifts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .jam-gift {
   background-image: url("img/bg-rasb-min.png");
   width: 560px;
@@ -122,6 +160,17 @@ a,
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+}
+
+.mini-catalog,
+.cream-catalog-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1000px;
 }
 
 .mini-catalog a,
@@ -178,8 +227,23 @@ a,
   color: #323232;
 }
 
+.advantages-list {
+  columns: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
 li {
   list-style: none;
+}
+
+.news-mailing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .news {
@@ -258,6 +322,14 @@ li {
   background-image: linear-gradient(to top, #e74a35, #f26843);
 }
 
+.main-footer,
+.social-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .footer-navigation {
   font-size: 13px;
   font-weight: bold;
@@ -268,4 +340,15 @@ li {
   text-align: left;
   color: #ffffff;
   text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fefefe;
 }

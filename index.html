@@ -20,13 +20,13 @@
       </a>
       <ul class="site-navigation">
         <li><a href="catalog.html"> Каталог </a>
-        <ul>
-          <li class="catalog-navigation "><a href="#"> Новинки </a></li>
-          <li class="catalog-navigation"><a href="catalog.html"> Сливочное </a></li>
-          <li class="catalog-navigation"><a href="#"> Щербеты </a></li>
-          <li class="catalog-navigation"><a href="#"> Фруктовый лёд </a></li>
-          <li class="catalog-navigation"><a href="#"> Мелорин </a></li>
-        </ul>
+          <ul>
+            <li class="catalog-navigation "><a href="#"> Новинки </a></li>
+            <li class="catalog-navigation"><a href="catalog.html"> Сливочное </a></li>
+            <li class="catalog-navigation"><a href="#"> Щербеты </a></li>
+            <li class="catalog-navigation"><a href="#"> Фруктовый лёд </a></li>
+            <li class="catalog-navigation"><a href="#"> Мелорин </a></li>
+          </ul>
         </li>
         <li><a href="shipping-payment.html"> Доставка и оплата</a></li>
         <li><a href="about-company.html"> О компании </a></li>
@@ -114,20 +114,20 @@
 
 
     <!-- GIFTS-->
-<div class="gifts">
-    <section class="jam-gift">
-      <h2> Малинка даром</h2>
-      <p> При покупке 2 кг любого фруктового мороженого,
-        добавим в ваш заказ банку малинового варенья бесплатно. </p>
-      <a class="button" href="#"> Хочу варенье!</a>
-    </section>
-    <section class="choco-gift">
-      <h2> Шоколадки даром!</h2>
-      <p> При покупке 2 кг пломбира, добавим в ваш заказ
-        упаковку вкуснейшей шоколадной присыпки совершенно бесплатно. </p>
-      <a class="button" href=#> Хочу шоколадки!</a>
-    </section>
-</div>
+    <div class="gifts">
+      <section class="jam-gift">
+        <h2> Малинка даром</h2>
+        <p> При покупке 2 кг любого фруктового мороженого,
+          добавим в ваш заказ банку малинового варенья бесплатно. </p>
+        <a class="button" href="#"> Хочу варенье!</a>
+      </section>
+      <section class="choco-gift">
+        <h2> Шоколадки даром!</h2>
+        <p> При покупке 2 кг пломбира, добавим в ваш заказ
+          упаковку вкуснейшей шоколадной присыпки совершенно бесплатно. </p>
+        <a class="button" href=#> Хочу шоколадки!</a>
+      </section>
+    </div>
     <!-- MINI-CATALOG-->
     <section class="mini-catalog">
       <section class="orange-jam">
@@ -191,26 +191,27 @@
 
     <!--NEWS & MAILING-->
 
-    <article class="news">
-      <h3> Новое в нашем блоге</h3>
-      <p class="new-in-blog"><a href="#"> 10 способов сервировки фруктовых щербетов
-          к столу</a></p>
-    </article>
+    <div class="news-mailing">
+      <article class="news">
+        <h3> Новое в нашем блоге</h3>
+        <p class="new-in-blog"><a href="#"> 10 способов сервировки фруктовых щербетов
+            к столу</a></p>
+      </article>
 
-    <section class="mailing">
-      <p>
-        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
-        вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не
-        нужной ерунды. Честно =)
-      </p>
+      <section class="mailing">
+        <p>
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
+          вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не
+          нужной ерунды. Честно =)
+        </p>
 
-      <form name="subscribe" method="post" action="https://echo.htmlacademy.ru">
-        <label for="subscribe-email" class="visible-hidden">Электронная почта</label>
-        <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта" required>
-        <button type="submit" class="button subscribe-button" name="subscribe-submit">Отправить</button>
-      </form>
-    </section>
-
+        <form name="subscribe" method="post" action="https://echo.htmlacademy.ru">
+          <label for="subscribe-email" class="visible-hidden">Электронная почта</label>
+          <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта" required>
+          <button type="submit" class="button subscribe-button" name="subscribe-submit">Отправить</button>
+        </form>
+      </section>
+    </div>
 
 
 
@@ -238,10 +239,12 @@
         <li><a href="#"> Экологические стандарты </a></li>
       </ul>
     </nav>
-    <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
-    <p class="footer-copyright">
-      Сделано в <a href="https://htmlacademy.ru/"> HTML Academy</a> &copy; 2019
-    </p>
+    <div class="footer-logo">
+      <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+      <p class="footer-copyright">
+        Сделано в <a href="https://htmlacademy.ru/"> HTML Academy</a> &copy; 2019
+      </p>
+    </div>
   </footer>
 
   <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
@@ -250,11 +253,11 @@
     <h2> Мы обязательно вам ответим!</h2>
     <form class="feedback" name="feedback" method="post" action="https://echo.htmlacademy.ru">
       <p class="feedback-item">
-        <label for="feedback-name" class="visually-hidden">Как вас зовут?</label>
+        <label for="feedback-name" class="visible-hidden">Как вас зовут?</label>
         <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
       </p>
       <p class="feedback-item">
-        <label for="feedback-email" class="visually-hidden"> Ваша почта для ответа?</label>
+        <label for="feedback-email" class="visible-hidden"> Ваша почта для ответа?</label>
         <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
       </p>
       <textarea name="feedback-message" rows="10" cols="10" placeholder="Напишите что-нибудь..."></textarea>
