@@ -190,6 +190,7 @@ a,
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   width: 310px;
@@ -422,10 +423,22 @@ a,
   background-color: #231f20;
 }
 
+.cart-cost span {
+    margin-left: auto;
+    font-size: 15px;
+    line-height: 18px;
+    color: #323232;
+    font-weight: 700;
+  }
+
 .cart-cost span,
 .cart-item-img {
   margin-right: 14px;
   margin-left: 25px;
+}
+
+.cart-cost {
+  min-height: 47px;
 }
 
 .cart-item-cost,
@@ -535,6 +548,11 @@ a,
   color: #333;
   background-color: #f7f6f3;
 }
+
+.navigation-item>.active {
+    background-color: #d07058;
+    border-radius: 15px;
+  }
 
 .catalog-navigation {
   position: absolute;
@@ -713,6 +731,13 @@ a,
   z-index: 10;
 }
 
+.ice-cream-card:focus::after,
+.ice-cream-card:hover::after {
+    background-color: rgba(248,247,244,.2);
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
+    z-index: 7;
+}
+
 .best-offers::before {
   content: "";
   position: absolute;
@@ -788,6 +813,12 @@ a,
   color: #fff;
   cursor: pointer;
 }
+
+.ice-cream-card:focus>.fast-view,
+.ice-cream-card:hover>.fast-view {
+    display: block;
+    z-index: 10;
+  }
 
 .advantages {
   min-height: 256px;
@@ -991,24 +1022,14 @@ a,
 
 .footer-navigation {
   width: 345px;
-  max-height: 48px;
   font-size: 13px;
   color: #ffffff;
-  text-decoration: underline;
-}
-
-.information li {
-  padding-left: 20px;
-}
-
-.information {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0;
+  justify-content: flex-start;
 }
 
-.information .for-dealers::before {
+.footer-navigation .for-dealers::before {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
