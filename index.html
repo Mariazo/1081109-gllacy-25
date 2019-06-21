@@ -18,7 +18,7 @@
   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
   <div class="site-wrapper">
     <div class="container">
-      <header class="main-header">
+      <header class="main-header center">
         <nav class="main-navigation">
           <a class="main-header-logo">
             <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси Шоп">
@@ -29,10 +29,8 @@
                 <a href="catalog.html">
                   <span class="navigation-label"> Каталог </span>
                 </a>
-                <ul>
-                  <li class="catalog-navigation "><a href="#">
-                      <p> Новинки <p>
-                    </a></li>
+                <ul class="subnavigation">
+                  <li class="catalog-navigation "><a href="#"> Новинки </a></li>
                   <li class="catalog-navigation"><a href="catalog.html"> Сливочное </a></li>
                   <li class="catalog-navigation"><a href="#"> Щербеты </a></li>
                   <li class="catalog-navigation"><a href="#"> Фруктовый лёд </a></li>
@@ -54,6 +52,14 @@
               <li class="search-panel">
                 <a class="search-button" href="#">
                   <span class="visible-hidden"> Найти </span>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                   width="17" height="17" viewBox="0 0 17 17">
+                   <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0
+                   13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205
+                   5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2
+                   11 4.019 11 6.5 8.981 11 6.5 11z">
+                   </path>
+                 </svg>
                 </a>
                 <div class="search-field">
                   <h2 class="visible-hidden">Поиск</h2>
@@ -64,7 +70,13 @@
               </li>
 
               <li class="login-link">
-                <a class="login-button" href="#"> Вход</a>
+                <a class="login-button" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+                    <path fill="#FFF" d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+                    <path fill="#FFF" d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
+                  </svg>
+                  Вход
+                </a>
                 <div class="login-form">
                   <h2 class="visible-hidden">Личный кабинет</h2>
                   <form name="login" method="post" action="https://echo.htmlacademy.ru">
@@ -88,7 +100,17 @@
               </li>
 
               <li class="cart empty-cart">
-                <a class="cart-button" href="#">Пусто</a>
+                <a class="cart-button" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"
+                   viewBox="0 0 21 20">
+                     <path fill="#FFF" d="M5.657 2.031L5.422 0H0v2h3.64l1.5
+                     13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888
+                     4.031h12.66L17.372 13z"/>
+                     <circle fill="#FFF" cx="6.984" cy="18" r="2"/>
+                     <circle fill="#FFF" cx="15.984" cy="18" r="2"/>
+                   </svg>
+                  Пусто
+                </a>
               </li>
             </ul>
           </div>
@@ -99,7 +121,7 @@
         </div>
       </header>
 
-      <main class="container">
+      <main class="container center">
         <!-- SLIDER -->
         <section class="slider">
           <div class="slider-controls">
@@ -131,7 +153,7 @@
 
 
         <!-- GIFTS-->
-        <div class="gifts">
+        <div class="gifts center">
           <section class="jam-gift">
             <h2> Малинка даром</h2>
             <p> При покупке 2 кг любого фруктового мороженого,
@@ -146,7 +168,7 @@
           </section>
         </div>
         <!-- MINI-CATALOG-->
-        <section class="mini-catalog">
+        <section class="mini-catalog center">
           <section class="ice-cream-card best-offers">
             <img class="ice-cream-img" src="img/orange-min.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p class="cost"> 310₽/кг</p>
@@ -186,7 +208,7 @@
 
         <!--GLLACY-ABOUT-->
 
-        <section class="advantages">
+        <section class="advantages center">
           <h3> Магазин Глейси — это онлайн- и офлайн- магазин по продаже
             мороженого собственного производства на развес </h3>
           <div class="advantages-list">
@@ -209,7 +231,7 @@
 
         <!--NEWS & MAILING-->
 
-        <div class="news-mailing">
+        <div class="news-mailing center">
           <article class="news">
             <h3> Новое в нашем блоге</h3>
             <p class="new-in-blog"><a href="#"> 10 способов сервировки фруктовых щербетов
@@ -242,7 +264,7 @@
 
       <!--FOOTER-->
 
-      <footer class="main-footer">
+      <footer class="main-footer center">
         <div class="social-wrapper">
           <ul class="social-navigation">
             <li><a class="social-button" href="#"> <img src="img/twitter.svg" width="34" height="34" alt="Ссылка на твиттер"></a></li>
