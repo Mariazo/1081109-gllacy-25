@@ -340,34 +340,14 @@ a,
 
 .search-button {
   display: block;
-  width: 33px;
-  height: 33px;
+  width: 37px;
+  height: 37px;
   font-size: 14px;
   line-height: 16px;
   color: #fff;
   background-color: rgba(255, 255, 255, .2);
 }
 
-/*
-.search-panel svg {
-  position: relative;
-  top: 8px;
-  left: 8px;
-}
-
-.login-link svg {
-  position: relative;
-  top: 5px;
-  left: -4px;
-}
-
-.cart svg {
-  position: relative;
-  top: 6px;
-  left: -5px;
-}
-
-*/
 
 .user-navigation a {
   display: flex;
