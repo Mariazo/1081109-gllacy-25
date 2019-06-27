@@ -54,7 +54,7 @@
               <li class="search-panel">
                 <a class="search-button" href="#">
                   <span class="visible-hidden"> Найти </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17" style="margin-right: 0;">
                     <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0
                    13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205
                    5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2
@@ -121,9 +121,12 @@
         </div>
       </header>
 
-      <main class="container center">
+      <main class="container">
+        <h2 class="visible-hidden">Информация для клиентов</h2>
+        <h1 class="visible-hidden">Интернет-магазин мороженого "Глейси"</h1>
         <!-- SLIDER -->
-        <section class="slider">
+        <section class="slider center">
+          <h2 class="visible-hidden">Наше мороженое</h2>
           <div class="slider-controls">
             <label for="product-1">Первый</label>
             <label for="product-2">Второй</label>
@@ -154,8 +157,9 @@
 
         <!-- GIFTS-->
         <div class="gifts center">
+          <h2 class="visible-hidden">Специальное предложение</h2>
           <section class="jam-gift">
-            <h2> Малинка даром</h2>
+            <h2> Малинка даром!</h2>
             <p> При покупке 2 кг любого фруктового мороженого,
               добавим в ваш заказ банку малинового варенья бесплатно. </p>
             <a class="button want-jam" href="#"> Хочу варенье!</a>
@@ -169,6 +173,7 @@
         </div>
         <!-- MINI-CATALOG-->
         <section class="mini-catalog center">
+          <h2 class="visible-hidden">Лучшие предложения</h2>
           <section class="ice-cream-card best-offers">
             <img class="ice-cream-img" src="img/orange-min.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p class="cost"> 310₽/кг</p>
@@ -209,6 +214,7 @@
         <!--GLLACY-ABOUT-->
 
         <section class="advantages center">
+          <h2 class="visible-hidden">Наши преимущества</h2>
           <h3> Магазин Глейси — это онлайн- и офлайн- магазин по продаже
             мороженого собственного производства на развес </h3>
           <div class="advantages-list">
@@ -232,6 +238,7 @@
         <!--NEWS & MAILING-->
 
         <div class="news-mailing center">
+          <h2 class="visible-hidden">Полезная информация</h2>
           <article class="news">
             <h3> Новое в нашем блоге</h3>
             <p class="new-in-blog"><a href="#"> 10 способов сервировки фруктовых щербетов
@@ -262,21 +269,22 @@
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1511716025084"
-            width="1200" height="430" style="border:0" allowfullscreen>
+            width="100%" height="430" style="border:0" allowfullscreen>
           </iframe>
 
-
-          <div class="map-legend">
-            <p class="map-legend-address">
-              Адрес главного офиса <br> и офлайн-магазина
-              <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
-            </p>
-            <p class="map-legend-contacts">
-              Для заказов по телефону
-              <strong>8 812 450-25-25</strong>
-              (с 10 до 20 ежедневно)
-            </p>
-            <a href="feedback.html" class="button callback-form-button">Форма обратной связи</a>
+          <div class="map-container">
+            <div class="map-legend">
+              <p class="map-legend-address">
+                Адрес главного офиса <br> и офлайн-магазина
+                <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+              </p>
+              <p class="map-legend-contacts">
+                Для заказов по телефону
+                <strong>8 812 450-25-25</strong>
+                (с 10 до 20 ежедневно)
+              </p>
+              <a href="feedback.html" class="button callback-form-button">Форма обратной связи</a>
+            </div>
           </div>
         </section>
 
@@ -304,7 +312,7 @@
         <div class="footer-logo">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
           <p class="footer-copyright">
-            Сделано в <a href="https://htmlacademy.ru/"> HTML Academy</a> &copy; 2019
+            Сделано в <a class="copyright" href="https://htmlacademy.ru/"> HTML Academy</a> &copy; 2019
           </p>
         </div>
       </footer>

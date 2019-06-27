@@ -49,7 +49,7 @@
             <li class="search-panel">
               <a class="search-button" href="#">
                 <span class="visible-hidden"> Найти </span>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17" style="margin-right: 0;">
                   <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0
                  13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205
                  5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2
@@ -75,6 +75,7 @@
                 Вход
               </a>
               <div class="login-form">
+                <h2 class="visible-hidden">Личный кабинет</h2>
                 <form name="login" method="post" action="https://echo.htmlacademy.ru">
                   <p class="login-item">
                     <label for="login-email" class="visible-hidden">Электронная почта</label>
@@ -114,8 +115,8 @@
                       <img class="cart-item-img" src="img/orange-min.png" width="32" height="32" alt="Пломбир с апельсиновым джемом">
                       <span class="cart-item-title">Пломбир с апельсиновым джемом</span>
                     </a>
-                    <span class="cart-item-cost">1,5 кг x <b>200 руб</b></span>
-                    <span class="cart-item-price">300 руб</span>
+                    <span class="cart-item-cost">1,5 кг x <b>200 руб.</b></span>
+                    <span class="cart-item-price">300 руб.</span>
                   </li>
                   <li class="cart-item last-cart-item">
                     <button class="delete-cart-item" type="button">Удалить</button>
@@ -123,11 +124,11 @@
                       <img class="cart-item-img" src="img/strawberry-min.png" width="32" height="32" alt="Клубничный пломбир с присыпкой  из белого шоколада">
                       <span class="cart-item-title">Клубничный пломбир с присыпкой из белого шоколада</span>
                     </a>
-                    <span class="cart-item-cost">1,5 кг x <b>300 руб</b></span>
-                    <span class="cart-item-price">450 руб</span>
+                    <span class="cart-item-cost">1,5 кг x <b>300 руб.</b></span>
+                    <span class="cart-item-price">450 руб.</span>
                   </li>
                   <li class="cart-item cart-cost">
-                    <span>Итого: 750 руб</span>
+                    <span>Итого: 750 руб.</span>
                   </li>
                 </ul>
                 <div class="order-button">
@@ -146,11 +147,11 @@
     <main class="cream-catalog center">
 
       <div class="user-info has-breadcrumbs">
-        <ul class="breadcrumbs">
-          <li class="crumb"><a href="index.html"> Главная </a> </li>
-          <li class="crumb"><a href="catalog.html"> Каталог</a></li>
-          <li class="crumb-active"> Сливочное</li>
-        </ul>
+        <div class="breadcrumbs">
+          <p class="crumb description"><a href="index.html"> Главная </a> </p>
+          <p class="crumb description"><a href="catalog.html"> Каталог</a></p>
+          <p class="crumb-active"> Сливочное</p>
+        </div>
         <div class="header-contacts">
           <p>С 10 до 20, ежедневно </p>
           <p>8 812 450-25-25</p>
@@ -161,9 +162,9 @@
       <section class="filters">
         <h2 class="visible-hidden">Фильтры поиска</h2>
         <form name="filters" method="post" action="https://echo.htmlacademy.ru">
-          <div class="filters-first-row">
+<div class="filters-row">
             <fieldset class="sotring">
-              <legend>Сортировка</legend>
+              <legend>Сортировка:</legend>
               <div class="filters-background select">
                 <select class="filters-sorting" id="filters-sorting" name="filters-sorting">
                   <option value="popularity">по популярности</option>
@@ -171,7 +172,7 @@
                   <option value="expensive-first">сначала дорогие</option>
                   <option value="fat">по жирности</option>
                 </select>
-                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 9 5">
                   <path fill="#FFF" d="M4.5 5L0 0h9z" />
                 </svg>
               </div>
@@ -198,8 +199,7 @@
             </fieldset>
             <fieldset class="fat-level">
               <legend>Жирность:</legend>
-              <div class="filters-background">
-                <ul>
+                <ul class="filters-background">
                   <li class="filter-option">
                     <input class="radio-filter" type="radio" id="fat-0" name="filters-fat" value="0">
                     <label for="fat-0" tabindex="0">0%</label>
@@ -217,14 +217,10 @@
                     <label for="fat-30-more" tabindex="0">выше 30%</label>
                   </li>
                 </ul>
-              </div>
             </fieldset>
-          </div>
-          <div class="filters-second-row">
             <fieldset class="fillers">
-              <legend>Наполнители</legend>
-              <div class="filters-background">
-                <ul>
+              <legend>Наполнители:</legend>
+                <ul class="filters-background">
                   <li class="filter-option checklist">
                     <input class=" checkbox-filter" type="checkbox" id="fillers-chocolate" name="filters-fillers" value="chocolate" checked>
                     <label for="fillers-chocolate" tabindex="0">шоколадные</label>
@@ -246,10 +242,9 @@
                     <label for="fillers-jam" tabindex="0">джемы</label>
                   </li>
                 </ul>
-              </div>
             </fieldset>
             <button class="filters-submit" type="submit"> Применить</button>
-          </div>
+</div>
   </div>
   </form>
   </section>
@@ -257,6 +252,7 @@
   <!-- CATALOG-->
 
   <section class="cream-catalog-item">
+    <h2 class="visible-hidden">Список сливочного мороженого</h2>
 
     <section class="ice-cream-card">
       <img class="ice-cream-img" src="img/orange-min.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -408,7 +404,7 @@
     <div class="footer-logo">
       <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
       <p class="footer-copyright">
-        Сделано в <a href="https://htmlacademy.ru/"> HTML Academy</a> &copy; 2019
+        Сделано в<a class="copyright" href="https://htmlacademy.ru/"> HTML Academy</a> &copy; 2019
       </p>
     </div>
   </footer>
