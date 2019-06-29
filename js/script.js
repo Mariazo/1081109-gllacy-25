@@ -2,7 +2,7 @@ var link = document.querySelector(".callback-form-button");
 var popup = document.querySelector(".modal-feedback");
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector("form");
-var name = popup.querySelector("[name=feedback-name]");
+var user = popup.querySelector("[name=feedback-name]");
 var email = popup.querySelector("[name=feedback-email]");
 
 var isStorageSupport = true;
@@ -18,11 +18,11 @@ link.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
   if (storage) {
-      login.value = storage;
-    } else {
+      user.value = storage;
       email.focus();
-    }
-  name.focus();
+    } else {
+    user.focus();
+  }
 });
 
 close.addEventListener("click", function(evt) {
@@ -31,7 +31,7 @@ close.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-    if (!login.value || !password.value) {
+    if (!user.value || !email.value) {
       evt.preventDefault();
       console.log("Нужно ввести имя и электронный адрес");
     } else {

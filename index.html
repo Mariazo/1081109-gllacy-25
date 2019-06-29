@@ -176,38 +176,60 @@
           <h2 class="visible-hidden">Лучшие предложения</h2>
           <section class="ice-cream-card best-offers">
             <img class="ice-cream-img" src="img/orange-min.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p class="cost"> 310₽/кг</p>
-            <p class="description">
-              <a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
-            </p>
-            <a class="button fast-view" href="#"> Быстрый просмотр </a>
+            <div class="ice-cream-info">
+              <p class="price">
+                <span class="value"> 310₽</span>
+                <span class="weight">/кг</span>
+              </p>
+              <p class="description">
+                <a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
+              </p>
+            </div>
+              <a class="button fast-view" href="#"> Быстрый просмотр </a>
+
           </section>
 
           <section class="ice-cream-card best-offers">
             <img class="ice-cream-img" src="img/coffee-min.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <p class="cost"> 380₽/кг</p>
-            <p class="description">
-              <a href="#"> Сливочно-кофейное с кусочками шоколада </a>
-            </p>
-            <a class="button fast-view" href="#"> Быстрый просмотр</a>
+            <div class="ice-cream-info">
+              <p class="price">
+                <span class="value"> 380₽ </span>
+                <span class="weight">/кг</span>
+              </p>
+              <p class="description">
+                <a href="#"> Сливочно-кофейное с кусочками шоколада </a>
+              </p>
+            </div>
+              <a class="button fast-view" href="#"> Быстрый просмотр</a>
           </section>
 
           <section class="ice-cream-card best-offers">
             <img class="ice-cream-img" src="img/strawberry-min.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p class="cost"> 355₽/кг</p>
-            <p class="description">
-              <a href="#"> Сливочно-клубничное с присыпкой из белого шоколада </a>
-            </p>
-            <a class="button fast-view" href="#"> Быстрый просмотр</a>
+            <div class="ice-cream-info">
+              <p class="price">
+                <span class="value">355₽</span>
+                <span class="weight">/кг</span>
+              </p>
+              <p class="description">
+                <a href="#"> Сливочно-клубничное с присыпкой из белого шоколада </a>
+              </p>
+            </div>
+              <a class="button fast-view" href="#"> Быстрый просмотр</a>
           </section>
 
           <section class="ice-cream-card best-offers">
             <img class="ice-cream-img" src="img/cream-min.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <p class="cost"> 415₽/кг</p>
-            <p class="description">
-              <a href="#"> Сливочное крем-брюле с карамельной подливкой </a>
-            </p>
-            <a class="button fast-view" href="#"> Быстрый просмотр</a>
+            <div class="ice-cream-info">
+              <p class="price">
+                <span class="value"> 415₽</span>
+                <span class="weight">/кг</span>
+              </p>
+              <p class="description">
+                <a href="#"> Сливочное крем-брюле с карамельной подливкой </a>
+              </p>
+            </div>
+              <a class="button fast-view" href="#"> Быстрый просмотр</a>
+
           </section>
         </section>
 
@@ -321,24 +343,22 @@
 
   <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
 
-  <div class="modal-mask visible">
-    <section class="modal modal-feedback modal-show">
-      <h2> Мы обязательно вам ответим!</h2>
-      <form class="feedback" name="feedback" method="post" action="https://echo.htmlacademy.ru">
-        <p class="feedback-item">
-          <label for="feedback-name" class="visible-hidden">Как вас зовут?</label>
-          <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
-        </p>
-        <p class="feedback-item">
-          <label for="feedback-email" class="visible-hidden"> Ваша почта для ответа?</label>
-          <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
-        </p>
-        <textarea name="feedback-message" rows="10" cols="10" placeholder="Напишите что-нибудь..."></textarea>
-        <button class="button feedback-submit" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-  </div>
+  <section class="modal modal-feedback modal-show">
+    <h2> Мы обязательно вам ответим!</h2>
+    <form class="feedback" name="feedback" method="post" action="https://echo.htmlacademy.ru">
+      <p class="feedback-item">
+        <label for="feedback-name" class="visible-hidden">Как вас зовут?</label>
+        <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
+      </p>
+      <p class="feedback-item">
+        <label for="feedback-email" class="visible-hidden"> Ваша почта для ответа?</label>
+        <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+      </p>
+      <textarea name="feedback-message" rows="10" cols="10" placeholder="Напишите что-нибудь..."></textarea>
+      <button class="button feedback-submit" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
   <script src="js/script.js"> </script>
 </body>
 
