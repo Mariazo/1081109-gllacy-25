@@ -1,5 +1,5 @@
 var link = document.querySelector(".callback-form-button");
-var popup = document.querySelector(".modal-feedback");
+var popup = document.querySelector(".modal-mask");
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector("form");
 var user = popup.querySelector("[name=feedback-name]");
