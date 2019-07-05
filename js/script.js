@@ -6,21 +6,21 @@ var user = popup.querySelector("[name=feedback-name]");
 var email = popup.querySelector("[name=feedback-email]");
 
 var isStorageSupport = true;
-  var storage = "";
+var storage = "";
 
-  try {
-    storage = localStorage.getItem("email");
-  } catch (err) {
-    isStorageSupport = false;
-  }
+try {
+  storage = localStorage.getItem("email");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 link.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
   if (storage) {
-      user.value = storage;
-      email.focus();
-    } else {
+    user.value = storage;
+    email.focus();
+  } else {
     user.focus();
   }
 });
@@ -30,22 +30,22 @@ close.addEventListener("click", function(evt) {
   popup.classList.remove("modal-show");
 });
 
-form.addEventListener("submit", function (evt) {
-    if (!user.value || !email.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести имя и электронный адрес");
-    } else {
-      if (isStorageSupport) {
+form.addEventListener("submit", function(evt) {
+  if (!user.value || !email.value) {
+    evt.preventDefault();
+    console.log("Нужно ввести имя и электронный адрес");
+  } else {
+    if (isStorageSupport) {
       localStorage.setItem("email", email.value);
     }
-    }
-  });
+  }
+});
 
-  window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show");
-        }
-      }
-    });
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("modal-show")) {
+      popup.classList.remove("modal-show");
+    }
+  }
+});

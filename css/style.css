@@ -154,7 +154,7 @@ body {
   background-color: #ffffff;
 }
 
-li {
+.undecor {
   display: list-item;
   list-style: none;
 }
@@ -354,6 +354,10 @@ a,
   line-height: 16px;
   color: #fff;
   background-color: rgba(255, 255, 255, .2);
+}
+
+.search-button svg {
+  margin-right: 0;
 }
 
 .search-button::after {
@@ -609,6 +613,10 @@ a,
   justify-content: flex-end;
   height: 100%;
   text-align: right;
+}
+
+.contacts-position {
+  margin-top: -32px;
 }
 
 .header-contacts p:first-of-type {
@@ -912,16 +920,25 @@ a,
   border-radius: 5px;
 }
 
+.ice-cream-card::after {
+  position: absolute;
+  content: "";
+  left: -13px;
+  top: -8px;
+  width: 293px;
+  height: 125%;
+  border-radius: 5px;
+}
 .ice-cream-img {
   width: 267px;
   height: 267px;
-  margin-bottom: 14px;
+  margin-bottom: 22px;
   border-radius: 50%;
   z-index: 9;
 }
 
 .ice-cream-info {
-  margin-top: -60px;
+  margin-top: -63px;
   z-index: 10;
 }
 
@@ -933,7 +950,7 @@ a,
 
 .price {
   margin-top: -11px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   font-size: 45px;
   font-weight: 700;
   text-shadow: 0 1px 3px rgba(49, 50, 53, .5);
@@ -967,6 +984,7 @@ a,
   padding-left: 6px;
   padding-right: 7px;
   z-index: 9;
+  min-height: 45px;
   text-align: center;
   position: relative;
   top: -3px;
@@ -1062,7 +1080,7 @@ a,
 }
 
 .news-mailing {
-  padding: 40px;
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -1178,7 +1196,7 @@ a,
 .main-footer {
   width: 1146px;
   margin: 0 auto;
-  padding: 24px 0 27px;
+  padding: 19px 0 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1266,20 +1284,16 @@ a,
   margin-right: -33px;
 }
 
-.footer-navigation p:not(:first-of-type) {
+.footer-navigation a {
+  border-bottom: 1px solid #adbdb4;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
+  margin-top: 3px;
+  margin-left: 4px;
+  position: relative;
 }
 
-.footer-navigation p:nth-child(2) {
-  padding-top: 4px;
-}
-
-.footer-navigation p:nth-child(4) {
-  padding-top: 7px;
+.footer-navigation .for-dealers {
+  font-weight: bold;
 }
 
 .footer-navigation .for-dealers::before {
@@ -1290,8 +1304,9 @@ a,
   width: 15px;
   height: 15px;
   background-image: url(../img/heart.svg);
-  left: -15px;
-  top: 2px;
+  left: -18px;
+  top: 3px;
+  display: block;
 }
 
 .footer-logo {
@@ -1303,6 +1318,22 @@ a,
   letter-spacing: normal;
   text-align: left;
   color: #fefefe;
+}
+
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 15;
+}
+
+.overlay {
+  background-color: #000000;
+  opacity: 0.5
 }
 
 @keyframes bounce {
@@ -1324,13 +1355,20 @@ a,
 }
 
 .modal-feedback {
-  top: 25%;
-  left: 50%;
+  top: 40%;
+  left: 51.5%;
   margin-left: -235px;
   width: 478px;
-  padding: 25px;
+  padding: 20px 26px 27px 24px;
   border-radius: 10px;
   z-index: 15;
+}
+
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
+  border: 2px solid rgba(154, 154, 154, .52);
+  padding: 8px;
+  color: #323232;
 }
 
 .modal {
@@ -1338,6 +1376,8 @@ a,
   color: #323232;
   background-color: #f8f7f4;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  max-width: 428px;
+  max-height: 443px;
 }
 
 .modal-feedback h2 {
@@ -1346,6 +1386,10 @@ a,
   font-size: 24px;
   line-height: 28px;
   color: #323232;
+}
+
+.feedback {
+  max-width: 428px;
 }
 
 .feedback-item {
@@ -1391,6 +1435,7 @@ a,
 .button.feedback-submit {
   align-self: flex-end;
   padding: 10px 25px;
+  margin-left: 68%;
 }
 
 .modal-close {
@@ -1437,6 +1482,7 @@ a,
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto;
+  margin-top: 4px;
 }
 
 .map-frame {
@@ -1530,7 +1576,7 @@ select {
 }
 
 h1 {
-  margin-top: 2px;
+  margin-top: -28px;
   margin-bottom: 25px;
   padding: 0;
   font-size: 35px;
@@ -1564,16 +1610,7 @@ h1 {
   color: #fff;
 }
 
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-
-svg:not(:root) {
+svg {
   overflow: hidden;
   margin-right: 6px;
 }
@@ -1844,8 +1881,8 @@ select {
 }
 
 .pagination-list {
-  margin-bottom: 30px;
-  margin-top: 15px;
+  margin-bottom: 34px;
+  margin-top: 18px;
   height: 56px;
   display: flex;
   justify-content: flex-end;
@@ -1898,19 +1935,4 @@ select {
 .checklist {
   padding-right: 14px;
   padding-left: 36px;
-}
-
-.modal-mask {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .4);
-}
-
-.overlay {
-  background-color: #000000;
-  opacity: 0.5
 }

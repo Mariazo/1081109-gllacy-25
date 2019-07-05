@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 
@@ -24,12 +24,12 @@
             <img src="img/logo.svg" width="154" height="64" alt="Логотип Глэйси Шоп">
           </a>
           <div class="navigation-container">
-            <ul class="site-navigation">
+            <ul class="site-navigation undecor">
               <li class="navigation-item catalog-item">
                 <a href="catalog.html">
                   <span class="navigation-label"> Каталог </span>
                 </a>
-                <ul class="subnavigation">
+                <ul class="subnavigation undecor">
                   <li class="catalog-navigation">
                     <p> Новинки </p>
                   </li>
@@ -50,11 +50,11 @@
                 </a>
               </li>
             </ul>
-            <ul class="user-navigation">
+            <ul class="user-navigation undecor">
               <li class="search-panel">
                 <a class="search-button" href="#">
                   <span class="visible-hidden"> Найти </span>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17" style="margin-right: 0;">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
                     <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0
                    13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205
                    5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2
@@ -94,7 +94,7 @@
                         <a href="#" class="login-form-forget">Забыли пароль?</a>
                         <a href="#" class="login-form-sin-up">Новая регистрация</a>
                       </p>
-                      <button class="button login" type="submit">Войти</button>
+                      <button aria-label="Войти" class="button login" type="submit">Войти</button>
                     </div>
                   </form>
                 </div>
@@ -132,7 +132,7 @@
             <label for="product-2">Второй</label>
             <label for="product-3">Третий</label>
           </div>
-          <ul class="slider-list">
+          <ul class="slider-list undecor">
             <li class="slider-item slide" id="slide1">
               <h3 class="slide-title">
                 Крем-брюле и пломбир с малиновым джемом
@@ -185,7 +185,7 @@
                 <a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
               </p>
             </div>
-              <a class="button fast-view" href="#"> Быстрый просмотр </a>
+            <a class="button fast-view" href="#"> Быстрый просмотр </a>
 
           </section>
 
@@ -200,7 +200,7 @@
                 <a href="#"> Сливочно-кофейное с кусочками шоколада </a>
               </p>
             </div>
-              <a class="button fast-view" href="#"> Быстрый просмотр</a>
+            <a class="button fast-view" href="#"> Быстрый просмотр</a>
           </section>
 
           <section class="ice-cream-card best-offers">
@@ -214,7 +214,7 @@
                 <a href="#"> Сливочно-клубничное с присыпкой из белого шоколада </a>
               </p>
             </div>
-              <a class="button fast-view" href="#"> Быстрый просмотр</a>
+            <a class="button fast-view" href="#"> Быстрый просмотр</a>
           </section>
 
           <section class="ice-cream-card best-offers">
@@ -228,7 +228,7 @@
                 <a href="#"> Сливочное крем-брюле с карамельной подливкой </a>
               </p>
             </div>
-              <a class="button fast-view" href="#"> Быстрый просмотр</a>
+            <a class="button fast-view" href="#"> Быстрый просмотр</a>
 
           </section>
         </section>
@@ -277,7 +277,7 @@
             <form name="subscribe" method="post" action="https://echo.htmlacademy.ru">
               <label for="subscribe-email" class="visible-hidden">Электронная почта</label>
               <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта" required>
-              <button type="submit" class="button subscribe-button" name="subscribe-submit">Отправить</button>
+              <button aria-label="Отправить" type="submit" class="button subscribe-button" name="subscribe-submit">Отправить</button>
             </form>
           </section>
         </div>
@@ -291,7 +291,7 @@
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <iframe class="map-frame"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1511716025084"
-             style="border:0" allowfullscreen>
+            style="border:0" allowfullscreen>
           </iframe>
 
           <div class="map-container">
@@ -316,7 +316,7 @@
 
       <footer class="main-footer center">
         <div class="social-wrapper">
-          <ul class="social-navigation">
+          <ul class="social-navigation undecor">
             <li><a class="social-button" href="#"> <img src="img/twitter.svg" width="34" height="34" alt="Ссылка на твиттер"></a></li>
             <li><a class="social-button" href="#"> <img src="img/instagram.svg" width="34" height="34" alt="Ссылка на инстаграм"></a></li>
             <li><a class=" social-button" href="#"> <img src="img/fb.svg" width="34" height="34" alt="Ссылка на фейсбук"> </a></li>
@@ -325,10 +325,10 @@
         </div>
         <nav class="footer-navigation">
 
-          <p class="for-dealers description"><a href="#"> Для поставщиков </a></p>
-          <p class="description"><a href="#"> О производстве </a></p>
-          <p class="description"><a href="#"> Наши документы </a></p>
-          <p class="description"><a href="#"> Экологические стандарты </a></p>
+          <a class="for-dealers" href="#"> Для поставщиков </a>
+          <a href="#"> О производстве </a>
+          <a href="#"> Наши документы </a>
+          <a href="#"> Экологические стандарты </a>
 
         </nav>
         <div class="footer-logo">
@@ -342,27 +342,26 @@
   </div>
 
   <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
-<div class="modal-mask">
-  <section class="modal modal-feedback">
-    <h2> Мы обязательно вам ответим!</h2>
-    <form class="feedback" name="feedback" method="post" action="https://echo.htmlacademy.ru">
-      <p class="feedback-item">
-        <label for="feedback-name" class="visible-hidden">Как вас зовут?</label>
-        <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
-      </p>
-      <p class="feedback-item">
-        <label for="feedback-email" class="visible-hidden"> Ваша почта для ответа?</label>
-        <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
-      </p>
-      <textarea name="feedback-message" rows="10" cols="10" placeholder="Напишите что-нибудь..."></textarea>
-      <button class="button feedback-submit" type="submit">Отправить</button>
-    </form>
-    <button class="modal-close" type="button">Закрыть</button>
-  </section>
-  <div class="overlay">
+  <div class="modal-mask">
+    <section class="modal modal-feedback">
+      <h2> Мы обязательно вам ответим!</h2>
+      <form class="feedback" name="feedback" method="post" action="https://echo.htmlacademy.ru">
+        <p class="feedback-item">
+          <label for="feedback-name" class="visible-hidden">Как вас зовут?</label>
+          <input type="text" name="feedback-name" id="feedback-name" placeholder="Как вас зовут?">
+        </p>
+        <p class="feedback-item">
+          <label for="feedback-email" class="visible-hidden"> Ваша почта для ответа?</label>
+          <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <textarea name="feedback-message" rows="8" cols="10" placeholder="Напишите что-нибудь..."></textarea>
+        <button aria-label="Отправить" class="button feedback-submit" type="submit">Отправить</button>
+      </form>
+      <button aria-label="Закрыть" class="modal-close" type="button">Закрыть</button>
+    </section>
+    <div class="overlay"> </div>
   </div>
-</div>
-  <script src="js/script.js"> </script>
+  <script src="js/script.min.js"> </script>
 </body>
 
 </html>
